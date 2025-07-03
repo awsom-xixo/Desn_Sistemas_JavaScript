@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function minhaFuncao(){
+            var x;
+            var idade = prompt("Qual é a sua idade?");
+            if (idade != null && idade != "")
+            {
+                x = "Sua idade é: " + idade;
+                document.getElementById("demo").innerHTML = x;
+            }
+        }
+    </script>
+
+    <p>Clique para exibir</p>
+    <button type="button" onclick="minhaFuncao()">Exibir</button>
+
+    <p id="demo">
+
+    </p>
+    <footer>
+        Micael Jeferson Junco 20242V1
+    </footer>
+</body>
+</html>

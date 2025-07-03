@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>InnterHTML</title>
 </head>
 <body>
+    <p id="demo"></p>
+    <p id="soma"></p>
     <script>
-        window.alert(5+3);
+        document.getElementById("demo").innerHTML = "Você está avançando!";
+        document.getElementById("soma").innerHTML = "A soma de 5 + 1 é: " + (5 + 1);
     </script>
+
     <footer>
         Micael Jeferson Junco 20242V1
     </footer>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <p>Passe o mouse sobre o Rigby!</p>
+    <img src="../img/rigby1.jpg" alt="Rigby"
+        onmouseover="this.src='../img/rigby2.jpg';
+        document.getElementById('demo').innerHTML='Rigby está feliz!';"
+        onmouseout="this.src='../img/rigby1.jpg';
+        document.getElementById('demo').innerHTML='';"
+    >
+    
+    <p id="demo"></p>
+    <footer>
+        Micael Jeferson Junco 20242V1
+    </footer>
+</body>
+</html>

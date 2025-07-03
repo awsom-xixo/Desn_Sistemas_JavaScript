@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        textarea {
+            font-size: 24px;
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        button {
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            margin: 5px;
+        }
+        #buttons {
+            display: flex;
+            flex-wrap: wrap;
+            width: 220px;
+        }
+    </style>
+</head>
+<body>
+    <textarea name="areaCalc" id="areaCalc" readonly style="display: block; width: 100%;"></textarea>
+    <div id="buttons">
+        <button type="button" onclick="addCalculo(this.innerText)">1</button>
+        <button type="button" onclick="addCalculo(this.innerText)">2</button>
+        <button type="button" onclick="addCalculo(this.innerText)">3</button>
+        <button type="button" onclick="addCalculo(this.innerText)">4</button>
+        <button type="button" onclick="addCalculo(this.innerText)">5</button>
+        <button type="button" onclick="addCalculo(this.innerText)">6</button>
+        <button type="button" onclick="addCalculo(this.innerText)">7</button>
+        <button type="button" onclick="addCalculo(this.innerText)">8</button>
+        <button type="button" onclick="addCalculo(this.innerText)">9</button>
+        <button type="button" onclick="addCalculo(this.innerText)">0</button>
+        <button type="button" onclick="addCalculo(this.innerText)">+</button>
+        <button type="button" onclick="resultado()">=</button>
+        <button type="button" onclick="limpar()">C</button>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>

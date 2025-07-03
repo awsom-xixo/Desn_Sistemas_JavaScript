@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Form</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+
+        form {
+            width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        fieldset {
+            padding: 30px;
+            border: 2px solid gray;
+        }
+
+        legend {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: rgb(58, 58, 58);
+        }
+
+        label {
+            width: 100px;
+            display: inline-block;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        input[type="text"]{
+            width: 300px;
+            height: 30px;
+        }
+
+        select {
+            margin-top: 10px;
+            height: 30px;
+        }
+
+        input[type="radio"] {
+            margin-left: 10px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="" name="meuForm" id="meuForm">
+
+        <fieldset>
+            <legend>Exemplo de Formulário com Validação</legend>
+            <label for="inputText1">Nome*</label>
+            <input type="text" id="inputText1" name="textName">
+            <label for="selectCid">Cidade*</label>
+            <select id="selectCid" name="selectCid">
+                <option value="" disabled selected> Selecione uma Cidade</option>
+                <option value="opcao1" > Curitiba - PR</option>
+                <option value="opcao2" > Florianópolis - SC</option>
+                <option value="opcao3" > Porto Alegre - RS</option>
+                <option value="opcao3" > São Paulo - SP</option>
+                <option value="opcao3" > Joinville - SC</option>
+            </select>
+                
+            <p>
+                <label for="radioSexo">Sexo*</label>
+                <input type="radio" id="radioSexo" name="sexo" value="masculino"> Masculino
+                <input type="radio" id="radioSexo" name="sexo" value="feminino"> Feminino
+                <input type="radio" id="radioSexo" name="sexo" value="outro"> Outro
+            </p>
+            <p>
+                <label for="redeSocial">Rede Social*</label>
+                <input type="radio" id="redeSocial" name="redeSocial" value="facebook"> Facebook
+                <input type="radio" id="redeSocial" name="redeSocial" value="instagram"> Instagram
+                <input type="radio" id="redeSocial" name="redeSocial" value="orkut"> Orkut
+                <input type="radio" id="redeSocial" name="redeSocial" value="msn"> MSN
+                <input type="radio" id="redeSocial" name="redeSocial" value="ttk"> Tik Tok
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+        </fieldset>
+        
+    </form>
+
+    <script type="text/javascript" src="val_form.js"></script>
+</body>
+</html>
